@@ -309,4 +309,46 @@ p {
 }
 
 
+@media (max-width: 930px) {
+    #hero {
+        width: auto;
+        left: 0px;
+        margin: 0 10% 0 10%;
+        text-align: center;
+}
 
+    h2 {
+    text-align: center;
+    margin-left: 0;
+}
+
+.project1 {
+    flex-direction: column-reverse;
+    align-items: center;
+    grid-column: 1;
+}
+
+.grid-project {
+    grid-template-columns: auto;
+   
+}
+
+p {
+    text-align: center;
+    margin-left: 0;
+}
+
+.paragraph2 {
+    margin: 0;
+}
+
+.btn2 {
+    margin-bottom: 20px;
+}
+
+#image1 {
+    width: auto;
+    height: auto;
+}
+
+}
