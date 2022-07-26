@@ -16,14 +16,16 @@ body {
 header {   
     position: relative; 
     height: 137px;
+    display:flex;
+    justify-content: space-between;
 }
 
 #social-icons {
     position: absolute;
     width: 119px;
     height: 32px;
-    left: 1049px;
-    top: 48px;
+    left: 87.5%;
+    top: 46px;
     }
 
 #github {
@@ -44,22 +46,12 @@ header {
 .menu {
     margin: auto;
     position: absolute;
-    width: 497px;
+    width: 490px;
     top: 46px;
     left: 31.3%; 
     display:flex;
+    flex-direction: row;
     justify-content: space-between; 
-}
-
-#hover {
-    position: absolute; 
-    width: 108px;
-    height: 4px;
-    left: 369px;
-    top: 88px;
-    background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 83px;
 }
 
 #points {
@@ -79,6 +71,9 @@ header {
     cursor: pointer;
 }
 
+button:hover {
+    cursor: pointer;
+}
 .logo { 
     position: absolute; 
     width: 202px;
@@ -116,6 +111,8 @@ h1 {
     font-size: 55px;
     line-height: 82px;
     color: #FFFFFF;
+    letter-spacing: 1px;
+    word-spacing: -3px;
 }
 
 h2 {
@@ -123,7 +120,8 @@ h2 {
     font-size: 55px;
     line-height: 82px;
     color: #FFFFFF;
-    margin-left: 115px;
+    margin-left: 7%;
+    letter-spacing: 1px;
 }
 
 h3 {
@@ -131,9 +129,23 @@ h3 {
     font-size: 36px; 
     line-height: 82px;
     color: #FFFFFF;
-    margin-top: 88px;
-    margin-bottom: 110px;
+    margin-top: 63px;
+    margin-bottom: 92px;
+    position: relative;
+    letter-spacing: 0.5px;
 }
+
+h3::after {
+    content: '';  
+    width: 57%;   
+    height: 10px;  
+    background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%); 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 83px;   
+    position: absolute;   
+    top: 80px; 
+    left: 25%;  
+    }
 
 #hero-text {
     margin-top: 67px;
@@ -142,13 +154,15 @@ h3 {
     line-height: 45px;
     color: #BCBCBC;
     margin-bottom: 67px;
+    letter-spacing: 1px;
+    word-spacing: -4.5px;
 }
 
 .hero_img { 
     position: absolute;
     width: 758px;
     height: 758px;
-    left: 53%;
+    left: 54%;
     top: 135px;
     opacity: 0.5;
 }
@@ -163,17 +177,9 @@ h3 {
     font-size: 28px;
     color: #FFFFFF;
     margin:auto;
-}
-
-.button_text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 28px;
-    color: #FFFFFF;
-    margin:auto;
+    margin-top: 29px;
+    letter-spacing: 1px;
+    word-spacing: -2px;
 }
 
 .projects {   
@@ -183,8 +189,8 @@ h3 {
 .grid-project {
     display: grid;
     grid-template-columns: auto auto;    
-    column-gap: 106.36px;
-    row-gap: 139px;
+    column-gap: 6%;
+    row-gap: 105px;
     
 }
 .project1 {
@@ -192,14 +198,16 @@ h3 {
     display: flex;
     flex-direction: row;
     text-align: center;
-    justify-content: space-between;
-    margin-top: 88px;
-    border: 1px solid #ffffff;
-    margin-top: 204px;
-    border-radius: 50px 0px 50px 0px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+    justify-content: space-between; 
+    margin: 15px;
+    margin-top: 120px;
+    
+    background: #0F1624;
+    box-shadow: 0px 0px 12px #FFFFFF;
+    border-radius: 50px 0px;
     
 }
+
 .project2 {
     display:flex;
     flex-direction: column;
@@ -208,19 +216,10 @@ h3 {
     font-size: 28px;
     line-height: 42px;
     padding:25px;
-    color: #FFFFFF;
-    border: 1px solid #ffffff;
-    border-radius: 50px 0px 50px 0px;
-
-}
-.project3 {
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 42px;
-
-    color: #FFFFFF;
-    border: 1px solid #ffffff;
-    border-radius: 50px 0px 50px 0px;
+    background: #0F1624;
+    box-shadow: 0px 0px 12px #FFFFFF;
+    border-radius: 50px 0px;
+    margin: 15px;
 
 }
 
@@ -233,15 +232,25 @@ p {
     width: 500px;
     text-align: left;
     margin-left: 55px;
+    letter-spacing: 1px;
+    word-spacing: -4.5px;
+    
 }
 #image1 {
     Width: 500px;
     Height: 541.09px;
     padding: 30px;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 0px 0px 70px 0px;
+}
+
+.image2 {
+    border-radius: 50px 8px 8px 8px;
 }
 
 .btn2 { 
-    width: 220px;
+    width: 225px;
     height: 65px;
     background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -249,21 +258,55 @@ p {
     font-weight: 600;
     font-size: 20px;
     color: #FFFFFF;
-    margin:auto;
+    margin-left: 6%;
+    margin-top: 31px;
+    letter-spacing: 1px;
+    word-spacing: -2px;
+}
+.btn3 { 
+    width: 225px;
+    height: 65px;
+    background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 83px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-left: 2%;
+    margin-top: -6.5px;
+    letter-spacing: 1px;
+    word-spacing: -2px;
 }
 
 .title2 {
-    margin-top: 30.66px;
+    margin-top: 8px;
+    margin-left: -4%;
     margin-bottom: 0px;
+    position: relative;
+}
+
+.title2::after {
+        content: '';
+        width: 151%;     
+        height: 4.11px;       
+        background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);       
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);   
+        border-radius: 83px;        
+        position: absolute;    
+        top: 77px;
+        left: -20%;
+        
 }
 .paragraph2 {
     margin-top: 20.57px;
     height: 216px;
     width: 460px;
-    margin:auto
+    margin:auto;
+    margin-left:1%;
+    margin-top: 26px;
+    letter-spacing: 0.5px;
+    word-spacing: -4px;
 }
 
-@media screen (max-width: 1200px) {
-    
-    
-}
+
+
